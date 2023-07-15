@@ -12,7 +12,7 @@
 <div on:click={passToParent}>
 <span>BOX GREEN, Click here!</span>
 </div>
-<style lang="scss">
+<style>
   div {
     border: 2px solid #444;
     padding: 2em;

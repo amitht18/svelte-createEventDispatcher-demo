@@ -12,7 +12,7 @@
 <span>BOX YELLOW {status}</span>
   <BoxRed on:toYellow={handleEventFromRed} />
 </div>
-<style lang="scss">
+<style>
   div {
     border: 2px solid #444;
     padding: 2em;

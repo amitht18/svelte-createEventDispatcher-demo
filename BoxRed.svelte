@@ -18,7 +18,7 @@
   <span>BOX RED {status}</span>
   <BoxGreen on:toRed={handleEventFromGreen} />
 </div>
-<style lang="scss">
+<style>
   div {
     border: 2px solid #444;
     padding: 2em;

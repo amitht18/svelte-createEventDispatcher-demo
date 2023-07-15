@@ -16,4 +16,6 @@
   </span>
   </div>
   <BoxYellow />
+
+  <h3>Github repository <a href="https://github.com/amitht18/svelte-createEventDispatcher-demo" rel="noopener noreferrer" target="_blank">amitht18/svelte-createEventDispatcher-demo</a></h3>
 </main>
