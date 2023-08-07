@@ -1,5 +1,16 @@
 <script>
 	import BoxYellow from "./BoxYellow.svelte";
+  const selectOptions = {
+    "Waiting": 0,
+    "Reached!": 2000,
+    "Done!": 1000
+  };
+  let selectedOption = 0;
+  let textAreaValue = 'AFSF';
+
+  $: {
+    console.log(textAreaValue)
+  }
 </script>
 <style>
   main {
@@ -18,4 +29,12 @@
   <BoxYellow />
 
   <h3>Github repository <a href="https://github.com/amitht18/svelte-createEventDispatcher-demo" rel="noopener noreferrer" target="_blank">amitht18/svelte-createEventDispatcher-demo</a></h3>
+  <select name="demoSelect" id="status" bind:value={selectedOption}>
+    {#each Object.entries(selectOptions) as [key, value]}
+      <option value={value}>{key}</option>
+    {/each}
+  </select>
+
+  <textarea name="demoTextarea" id="nnnnn" bind:value={textAreaValue} cols="30" rows="10"></textarea>
+  <div>{textAreaValue}</div>
 </main>

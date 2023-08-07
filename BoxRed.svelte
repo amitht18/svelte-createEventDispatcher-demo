@@ -6,7 +6,6 @@
   $: status = "Waiting";
 
   function handleEventFromGreen(event) {
-    console.log("EVEEV", event);
     status = "Reached!";
     setTimeout(() => {
       dispatch("toYellow", event.detail);
